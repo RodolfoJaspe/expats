@@ -252,7 +252,7 @@ footer .navbar {
     font-size: 1.5rem;
     line-height: 1.5;
   }
-  .users {
+  .users-text {
     width: 25%;
   }
 }
@@ -264,7 +264,7 @@ footer .navbar {
     font-size: 1.2rem;
     line-height: 1.5;
   }
-  .users {
+  .users-text {
     width: 30%;
   }
   .signup button {
@@ -288,7 +288,7 @@ footer .navbar {
   .missionstatement {
     width: 50%;
   }
-  .users {
+  .users-text {
     width: 35%;
   }
   .signup button {
@@ -307,7 +307,7 @@ footer .navbar {
   .missionstatement {
     width: 60%;
   }
-  .users {
+  .users-text {
     width: 45%;
   }
 }
