@@ -1,0 +1,317 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background: url("../img/World_map.png") repeat top;
+  background-size: contain;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  z-index: -2; /* to not blur everything*/
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1 {
+  color: #d9dad7;
+  font-size: 5rem;
+  text-shadow: 0.1rem 0.1rem 0.1rem #c24d2c;
+  margin-bottom: 2%;
+  text-align: center;
+  padding-top: 5%;
+}
+h1::first-letter {
+  font-size: 6rem;
+  color: #c24d2c;
+  text-shadow: 0.1rem 0.1rem 0.1rem #1a2639;
+}
+h2 {
+  font-size: 4.5rem;
+  color: #c24d2c;
+  text-shadow: 0.2rem 0.2rem 0.2rem #1a2639;
+}
+h3 {
+  color: #d9dad7;
+  font-size: 2rem;
+  text-shadow: 0.1rem 0.1rem 0.1rem #c24d2c;
+  margin: 4% 0;
+  text-align: center;
+}
+p {
+  font-size: 1.5rem;
+  color: #d9dad7;
+}
+.maincontainer {
+  background-image: linear-gradient(to right, #445575, #141d2b);
+  opacity: 0.9;
+  width: 100vw;
+  height: 100%;
+  background-size: cover;
+  z-index: -1; /* to not blur everything*/
+}
+/* .navbar {
+  margin: 3%;
+} */
+.navbar a {
+  color: #d9dad7;
+  text-shadow: 0.1rem 0.1rem 0.1rem #1a2639;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin: 1%;
+  border-radius: 5%;
+}
+.navbar a:hover {
+  color: #c24d2c;
+  text-shadow: 0.1rem 0.1rem 0.1rem #1a2639;
+}
+.innercontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+.developer {
+  margin: 7vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+/*only want to change dev picture*/
+.developer > img {
+  width: 15vw;
+}
+.devtitle {
+  margin-top: 1vh;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+.devtitle a img {
+  width: 2vw;
+}
+.signup {
+  text-align: center;
+  background-color: #c24d2c;
+  width: 100%;
+  padding: 5% 0;
+}
+
+.signup button {
+  font-size: 3rem;
+  color: #445575;
+  width: 30vw;
+  height: 8vh;
+  border-radius: 1vw;
+  border: none;
+}
+
+.signup button:hover {
+  box-shadow: none;
+  color: #1a2639;
+  border: 0.2rem solid #445575;
+}
+
+footer .navbar {
+  padding: 3%;
+}
+
+@media (max-width: 1380px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  .developer > img {
+    width: 23vw;
+  }
+  .devtitle a img {
+    width: 3vw;
+  }
+}
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+  .signup button {
+    font-size: 2rem;
+    width: 40vw;
+  }
+  .developer > img {
+    width: 30vw;
+  }
+  .devtitle a img {
+    width: 3.5vw;
+  }
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h1::first-letter {
+    font-size: 4rem;
+    color: #c24d2c;
+    text-shadow: 0.1rem 0.1rem 0.1rem #1a2639;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  .developer > img {
+    width: 40vw;
+  }
+  .devtitle a img {
+    width: 5vw;
+  }
+  .navbar a {
+    font-size: 1.2rem;
+  }
+  .signup button {
+    font-size: 1.5rem;
+    width: 45vw;
+    height: 6vh;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  .developer > img {
+    width: 50vw;
+  }
+  .devtitle a img {
+    width: 6vw;
+  }
+  header {
+    padding: 1%;
+  }
+}
